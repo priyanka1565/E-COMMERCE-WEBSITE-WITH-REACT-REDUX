@@ -22,11 +22,7 @@ const productSchema = new mongoose.Schema(
             type: Number,
             required: true
         },
-        image: {
-            data: Buffer,  // Binary image data
-            contentType: String,  // Image MIME type (e.g., 'image/jpeg', 'image/png')
-            fileName: String  // Original file name of the image
-        },
+        
     });
 
 const Product = mongoose.model('Product', productSchema);
